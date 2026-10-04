@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D3B66"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Request Group Change"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Info banner -->
+            <TextView
+                android:id="@+id/tvInfoBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_info_banner"
+                android:padding="12dp"
+                android:text="You can request to change your group. Your request will be reviewed by the lecturer."
+                android:textColor="#0D47A1"
+                android:textSize="13sp" />
+
+            <!-- Current Groups -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Current Groups"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCurrentGroups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_field_box"
+                android:padding="12dp"
+                android:textColor="#616161"
+                android:textSize="14sp"
+                tools:text="G02, G03, G05" />
+
+            <!-- Requested Group -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Requested Group *"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRequestedGroup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_field_box"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <!-- Reason -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Reason (optional)"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_field_box"
+                android:gravity="top|start"
+                android:hint="Tell us why you want to change your group..."
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:padding="12dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvCharCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="end"
+                android:text="0/200"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp" />
+
+            <!-- Submit -->
+            <Button
+                android:id="@+id/btnSubmitRequest"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0D47A1"
+                android:text="Submit Request"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

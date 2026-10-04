@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/ivIconBg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bg_notification_icon" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Registration confirmed" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            tools:text="Your account has been verified" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            tools:text="Today - 10:24 AM" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dotUnread"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/dot_unread" />
+
+</LinearLayout>
