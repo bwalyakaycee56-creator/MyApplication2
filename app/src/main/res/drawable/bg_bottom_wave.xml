@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="180dp"
+    android:viewportWidth="360"
+    android:viewportHeight="180">
+
+    <!-- Red Swoosh Accent Line -->
+    <path
+        android:pathData="M -10,30 C 80,75 220,95 370,105 L 370,115 C 220,105 80,85 -10,40 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="30"
+                android:endX="360"
+                android:endY="115"
+                android:type="linear">
+                <item android:color="#FFE51937" android:offset="0.0" />
+                <item android:color="#FFD32F2F" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- White Swoosh Accent Line -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M -10,40 C 80,85 220,105 370,115 L 370,125 C 220,115 80,95 -10,50 Z" />
+
+    <!-- Main Blue Wave Body -->
+    <path
+        android:pathData="M -10,50 C 80,95 220,115 370,125 L 370,190 L -10,190 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="180"
+                android:startY="50"
+                android:endX="180"
+                android:endY="180"
+                android:type="linear">
+                <item android:color="#FF0052D4" android:offset="0.0" />
+                <item android:color="#FF002688" android:offset="0.5" />
+                <item android:color="#FF001144" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+</vector>
